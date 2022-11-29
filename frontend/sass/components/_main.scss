@@ -1,0 +1,379 @@
+main {
+  background-color: #faf9f8;
+}
+
+.section_offre_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+  justify-content: space-between;
+}
+
+/////////// ARTICLE OFFRE ////////////////////
+
+.article_offre_card {
+  // background-color: $color_primary;
+  // border: 2px solid #dedcd9;
+  // border-radius: 8px;
+  // max-width: 520px;
+  // padding: 1.3rem;
+  // width: 100%;
+  // margin: 20px;
+  // min-width: 450px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:hover,
+  &:focus-visible {
+    border-color: #bebaba;
+    cursor: pointer;
+
+    h2 {
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.article_offre_card_companie {
+  font-weight: bold;
+  color: #3a3838;
+}
+
+.article_offre_card_titleLocal {
+  margin: 0.5rem 0;
+  font-size: 1.03rem;
+}
+
+.article_offre_card_infoItem {
+  margin: 0.5rem 0 0.6rem 0;
+  font-size: 0.95rem;
+  display: flex;
+
+  .fa-solid {
+    margin-right: 6px;
+  }
+
+  .type_txt {
+    text-transform: uppercase;
+  }
+
+  span {
+    background-color: #f3f2f1;
+    padding: 6px 9px;
+    color: #595959;
+    font-weight: bold;
+    display: flex;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 12px;
+    align-items: center;
+    border: 1px solid #e3e3e3;
+    font-weight: 400;
+  }
+}
+
+.text_location {
+  font-weight: normal;
+}
+
+.article_offre_card_infoItem2 {
+  margin-bottom: 0.5rem;
+
+  .fa-paper-plane {
+    color: $color_secondary;
+    margin-right: 7px;
+  }
+
+  .fa-user-plus {
+    color: #d98e06;
+  }
+
+  .infoItem_span {
+    margin-bottom: 3px;
+  }
+}
+
+.article_offre_card_list {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #6f6f6f;
+
+  li {
+    padding: 3px 0;
+    word-break: break-word;
+  }
+}
+
+.section_offre_card_date {
+  font-size: 0.95rem;
+  color: #6f6f6f;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.infoItem_span {
+  display: flex;
+  align-items: center;
+
+  .fa-share-nodes {
+    margin-right: 11px;
+  }
+
+  .fa-user-plus {
+    margin-right: 6px;
+  }
+}
+
+/////////// ARTICLE DESCRIPTIONS ////////////////////
+
+.article_description {
+  position: sticky;
+  align-self: flex-start;
+  top: 15px;
+  padding: 1.3rem;
+  /* margin: 20px; */
+  max-height: 100vh;
+  word-break: break-word;
+  padding-bottom: 10px;
+  background: white;
+  border: 1px solid rgba(223, 223, 223, 0.5607843137);
+  margin-top: 20px;
+  // height: 300px;
+
+  .fa-user-plus {
+    color: #d98e06;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .description_test {
+    max-height: calc(90vh - 143px);
+    overflow-x: auto;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .candidature {
+    padding: 8px;
+    background-color: #ffcd00;
+    /* border-radius: 6px; */
+    color: black;
+    font-weight: bold;
+    border: 1px solid rgb(167 134 0);
+    /* width: 50%; */
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 2px 0px #957700;
+  }
+
+  .heart {
+    background-color: #fff;
+    border-radius: 6px;
+    color: black;
+    font-weight: 700;
+    border: 1px solid rgb(255 205 0);
+    font-size: 20px;
+    /* height: 39px; */
+    box-shadow: 0px 2px 0px #ffcd00;
+    margin-left: 10px;
+    font-family: "Noto Sans", sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.date {
+  margin-top: 10px !important;
+}
+
+.infoItem_description {
+  align-content: center;
+  margin-top: 10px;
+}
+
+.avantage {
+  background-color: #f3f2f1;
+  padding: 6px 9px;
+  color: #595959;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 0 10px 10px 0 !important;
+  font-size: 0.9rem;
+}
+
+.candidature_simplifie {
+  border-bottom: 2px solid #e4e2e0;
+  padding-bottom: 20px;
+
+  span {
+    font-weight: 600;
+  }
+
+  .candid_buttons {
+    display: flex;
+    align-items: initial;
+    margin-top: 15px;
+  }
+}
+
+.description_header {
+  border-bottom: 2px solid #e4e2e0ff;
+}
+
+.description_header {
+  margin-top: 15px;
+}
+
+.description_salaire {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.description_avantage {
+  display: flex;
+  margin-top: -7px;
+}
+
+.nbreCandid {
+  margin-bottom: 0;
+}
+
+.description_text_type {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.description_description_text {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.description_text_type {
+}
+
+.descr_title {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.descr_div {
+  border-bottom: 2px solid #e4e2e0;
+  padding: 10px 0;
+}
+
+.descr_date {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.type_text {
+  text-transform: uppercase;
+}
+
+.type_card {
+  text-transform: uppercase;
+  background-color: #f3f2f1;
+  padding: 6px 9px;
+  color: #595959;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+.article_offre_card_title_mobile {
+  display: none;
+}
+
+// .description_card {
+//   max-width: 530px;
+//   min-width: 400px;
+// }
+
+// .transp_button {
+//   opacity: 0.1;
+// }
+
+.section_offre {
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 40%;
+}
+
+.visibleornone {
+  width: 58%;
+}
+
+// @media (max-width: 900px) {
+//   .section_offre {
+//     width: 100%;
+//   }
+
+//   // .visibleornone {
+//   //   width: 100%;
+//   // }
+// }
+
+.article_offre_card_infoItem2 p {
+  font-weight: 300;
+}
+
+@media (max-width: 1100px) {
+  .container-search {
+    flex-direction: column;
+    grid-gap: 0px !important;
+  }
+  .dropdown {
+    min-width: 0px !important;
+  }
+}
+
+/* background gradient */
+.gradient {
+  background: linear-gradient(90deg, #f6f6f6 0%, #f6f6f6 100%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.segment {
+  border-radius: 0px !important;
+}
+
+.article_description > div {
+  border-radius: 0px !important;
+  border: 0px !important;
+  box-shadow: 0px 0px 0px 0px !important;
+}
