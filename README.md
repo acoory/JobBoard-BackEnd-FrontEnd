@@ -2,9 +2,10 @@
 
 Une plateforme complète de gestion d'offres d'emploi permettant aux entreprises de publier des annonces et aux candidats de postuler.
 
-![Page d'accueil](https://i.postimg.cc/RW84LbSW/Capture-d-e-cran-2025-04-25-a-14-06-33.png)
-
-![Tableau de bord entreprise](https://i.postimg.cc/ryRm8GZ3/Capture-d-e-cran-2025-04-25-a-14-15-02.png)
+<p>
+<a href="https://postimg.cc/RW84LbSW" target="_blank"><img src="https://i.postimg.cc/RW84LbSW/Capture-d-e-cran-2025-04-25-a-14-06-33.png" alt="Capture-d-e-cran-2025-04-25-a-14-06-33"/></a><br/><br/>
+<a href='https://postimg.cc/7bDD9zkn' target='_blank'><img src='https://i.postimg.cc/ryRm8GZ3/Capture-d-e-cran-2025-04-25-a-14-15-02.png' border='0' alt='Capture-d-e-cran-2025-04-25-a-14-15-02'/></a>
+</p>
 
 ## Fonctionnalités
 
