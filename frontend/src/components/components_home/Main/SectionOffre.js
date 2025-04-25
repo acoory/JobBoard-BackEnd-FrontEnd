@@ -7,6 +7,8 @@ import { Dimmer, Loader, Segment, Image } from "semantic-ui-react";
 const SectionOffre = () => {
   const { allOffres } = useContext(CardContext);
 
+
+
   return (
     <>
       {allOffres ? (
@@ -15,7 +17,7 @@ const SectionOffre = () => {
             {allOffres.length > 0 ? (
               allOffres
                 .slice()
-                .reverse()
+                // .reverse()
                 .map((offre) => (
                   <SectionOffreCard key={offre._id} offre={offre} />
                 ))

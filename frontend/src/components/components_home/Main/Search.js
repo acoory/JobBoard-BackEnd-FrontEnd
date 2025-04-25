@@ -35,7 +35,7 @@ export default function Search() {
       let axios = require("axios");
       let config = {
         method: "get",
-        url: "http://141.94.31.123:4000/api/advertisement",
+        url: "http://localhost:4000/api/advertisement",
         headers: {},
       };
       axios(config)

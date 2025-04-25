@@ -17,7 +17,7 @@ const Main = () => {
   useEffect(() => {
     let config = {
       method: "get",
-      url: "http://141.94.31.123:4000/api/jobapplication",
+      url: "http://localhost:4000/api/jobapplication",
       headers: {},
     };
 

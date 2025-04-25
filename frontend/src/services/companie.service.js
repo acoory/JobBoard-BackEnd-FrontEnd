@@ -4,7 +4,7 @@ import axios from "axios";
 export const ReadCompanieData = async (user, setemail, setname) => {
   let config = {
     method: "get",
-    url: "http://141.94.31.123:4000/api/companie/" + JSON.parse(user).userId,
+    url: "http://localhost:4000/api/companie/" + JSON.parse(user).userId,
     headers: {},
   };
 
@@ -47,7 +47,7 @@ export const UpdateDataUser = async (
 
   let config = {
     method: "put",
-    url: "http://141.94.31.123:4000/api/companie/" + JSON.parse(user).userId,
+    url: "http://localhost:4000/api/companie/" + JSON.parse(user).userId,
     data: data,
   };
 
@@ -93,7 +93,7 @@ export const ChangePassword = async (
   let config = {
     method: "put",
     url:
-      "http://141.94.31.123:4000/api/companie/password/" +
+      "http://localhost:4000/api/companie/password/" +
       JSON.parse(user).userId,
     headers: {
       "Content-Type": "application/json",
@@ -151,7 +151,7 @@ export const Signup = async (
     // configuration axios
     var config = {
       method: "post",
-      url: "http://141.94.31.123:4000/api/companie/",
+      url: "http://localhost:4000/api/companie/",
       data: data,
     };
 

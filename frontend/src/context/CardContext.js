@@ -16,11 +16,12 @@ export const CardConsumer = ({ children }) => {
     let axios = require("axios");
     let config = {
       method: "get",
-      url: "http://141.94.31.123:4000/api/advertisement",
+      url: "http://localhost:4000/api/advertisement",
       headers: {},
     };
     axios(config)
       .then(function (response) {
+        console.log(response.data);
         // De base, la carte description contiendra les infos de la derniere offre publié
         const arr = response.data;
         setCard(arr.slice(-1)[0]);

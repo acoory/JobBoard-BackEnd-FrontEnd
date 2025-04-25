@@ -58,7 +58,7 @@ const ModalModifyPost = ({
 
       let config = {
         method: "put",
-        url: `http://141.94.31.123:4000/api/advertisement/${selectCard.id}`,
+        url: `http://localhost:4000/api/advertisement/${selectCard.id}`,
         headers: {
           "Content-Type": "application/json",
         },
@@ -75,7 +75,7 @@ const ModalModifyPost = ({
 
           let config = {
             method: "get",
-            url: "http://141.94.31.123:4000/api/advertisement",
+            url: "http://localhost:4000/api/advertisement",
             headers: {},
           };
 

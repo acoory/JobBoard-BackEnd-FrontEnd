@@ -23,7 +23,7 @@ const OffreCard = ({
   const deleteOffre = () => {
     let config = {
       method: "delete",
-      url: `http://141.94.31.123:4000/api/advertisement/${offre.id}`,
+      url: `http://localhost:4000/api/advertisement/${offre.id}`,
       headers: {},
     };
 

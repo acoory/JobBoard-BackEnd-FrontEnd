@@ -32,7 +32,7 @@ const ModalCandidature = () => {
 
       let config = {
         method: "post",
-        url: "http://141.94.31.123:4000/api/jobapplication",
+        url: "http://localhost:4000/api/jobapplication",
         headers: {
           "Content-Type": "application/json",
         },

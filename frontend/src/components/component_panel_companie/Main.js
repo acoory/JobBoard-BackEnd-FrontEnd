@@ -36,12 +36,13 @@ const Main = () => {
   const dataOffreCompanie = () => {
     let config = {
       method: "get",
-      url: "http://141.94.31.123:4000/api/advertisement",
+      url: "http://localhost:4000/api/advertisement",
       headers: {},
     };
 
     axios(config)
       .then(function (response) {
+        console.log(response.data);
         setOffres(response.data);
         // On stock seulement els offre créer par la companie connecté
         setCompanieOffre(
@@ -57,6 +58,7 @@ const Main = () => {
 
   useEffect(() => {
     dataOffreCompanie();
+    console.log(offres);
   }, [offres.length, companieOffre.length]);
 
   return (
@@ -130,7 +132,7 @@ const Main = () => {
           <section className="offres">
             {companieOffre
               .slice()
-              .reverse()
+              // .reverse()
               .map((offre) => (
                 <OffreCard
                   key={offre.id}
@@ -144,7 +146,7 @@ const Main = () => {
           </section>
         ) : (
           <section className="offres">
-            {allOffres.reverse().map((offre) => (
+            {allOffres && allOffres.map((offre) => (
               <OffreCard
                 key={offre.id}
                 offre={offre}

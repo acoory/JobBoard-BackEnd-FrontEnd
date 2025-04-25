@@ -1,0 +1,46 @@
+
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    # env_file:
+    #   - .env
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: jobboard
+      TZ: 'Europe/Paris'
+    ports:
+      - "3306:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+      interval: 3s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app-network
+
+  phpmyadmin:
+    platform: linux/amd64
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    links:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
+    networks:
+      - app-network
+
+volumes:
+  dbdata:
+    driver: local
+
+networks:
+  app-network:

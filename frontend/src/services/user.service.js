@@ -18,7 +18,7 @@ export const ChangePassword = async (
   let config = {
     method: "put",
     url:
-      "http://141.94.31.123:4000/api/user/password/" + JSON.parse(user).userId,
+      "http://localhost:4000/api/user/password/" + JSON.parse(user).userId,
     headers: {
       "Content-Type": "application/json",
     },
@@ -95,7 +95,7 @@ export const UpdateDataUser = async (
         );
     var config = {
       method: "put",
-      url: "http://141.94.31.123:4000/api/user/" + JSON.parse(user).userId,
+      url: "http://localhost:4000/api/user/" + JSON.parse(user).userId,
       data: data,
       headers: {
         Authorization: `Bearer ${JSON.parse(user).token}`,
@@ -143,7 +143,7 @@ export const ReadUserData = async (
 ) => {
   var config = {
     method: "get",
-    url: "http://141.94.31.123:4000/api/user/" + JSON.parse(user).userId,
+    url: "http://localhost:4000/api/user/" + JSON.parse(user).userId,
     headers: {},
   };
 
@@ -198,7 +198,7 @@ export const SignUp = async (
 
   var config = {
     method: "post",
-    url: "http://141.94.31.123:4000/api/user",
+    url: "http://localhost:4000/api/user",
     data: formData,
   };
 

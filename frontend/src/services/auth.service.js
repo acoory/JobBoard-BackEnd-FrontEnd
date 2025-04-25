@@ -17,7 +17,7 @@ export const SignIn = async (
 
   let config = {
     method: "post",
-    url: "http://141.94.31.123:4000/api/auth",
+    url: "http://localhost:4000/api/auth",
     headers: {
       "Content-Type": "application/json",
     },

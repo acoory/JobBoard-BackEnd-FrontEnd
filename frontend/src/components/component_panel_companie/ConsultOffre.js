@@ -23,7 +23,7 @@ const ConsultOffre = () => {
   useEffect(() => {
     let config = {
       method: "get",
-      url: "http://141.94.31.123:4000/api/jobapplication",
+      url: "http://localhost:4000/api/jobapplication",
       headers: {},
     };
 
@@ -51,7 +51,7 @@ const ConsultOffre = () => {
 
       let config = {
         method: "put",
-        url: `http://141.94.31.123:4000/api/jobapplication/${jobId}`,
+        url: `http://localhost:4000/api/jobapplication/${jobId}`,
         headers: {
           "Content-Type": "application/json",
         },

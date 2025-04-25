@@ -58,7 +58,7 @@ const ModalModifyPost = ({
 
     const config = {
       method: "post",
-      url: "http://141.94.31.123:4000/api/advertisement",
+      url: "http://localhost:4000/api/advertisement",
       headers: {
         "Content-Type": "application/json",
       },
